@@ -38,9 +38,9 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>io.swagger</groupId>
-  <artifactId>swagger-java-client</artifactId>
-  <version>1.0.0</version>
+  <groupId>com.ccyunchina</groupId>
+  <artifactId>harbor-java-client</artifactId>
+  <version>1.10.0</version>
   <scope>compile</scope>
 </dependency>
 ```
