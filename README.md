@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>com.ccyunchina</groupId>
+  <groupId>com.github.toyangdon</groupId>
   <artifactId>harbor-java-client</artifactId>
   <version>1.10.0</version>
   <scope>compile</scope>

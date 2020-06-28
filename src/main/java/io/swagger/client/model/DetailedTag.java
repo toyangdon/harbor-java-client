@@ -65,6 +65,12 @@ public class DetailedTag {
 
   @SerializedName("labels")
   private List<Label> labels = null;
+  
+  @SerializedName("push_time")
+  private String pushTime = null;
+  
+  @SerializedName("pull_time")
+  private String pullTime = null;
 
   public DetailedTag digest(String digest) {
     this.digest = digest;
@@ -197,6 +203,7 @@ public class DetailedTag {
     return this;
   }
 
+
    /**
    * The build time of the image.
    * @return created
@@ -208,6 +215,36 @@ public class DetailedTag {
 
   public void setCreated(String created) {
     this.created = created;
+  }
+  
+   public DetailedTag pushTime(String pushTime) {
+    this.pushTime = pushTime;
+    return this;
+  }
+
+
+  @ApiModelProperty(value = "The push time of the image.")
+  public String getPushTime() {
+    return pushTime;
+  }
+
+  public void setPushTime(String pushTime) {
+    this.pushTime = pushTime;
+  }
+  
+  public DetailedTag pullTime(String pullTime) {
+    this.pullTime = pullTime;
+    return this;
+  }
+
+
+  @ApiModelProperty(value = "The pull time of the image.")
+  public String getPullTime() {
+    return pullTime;
+  }
+
+  public void setPullTime(String pullTime) {
+    this.pullTime = pullTime;
   }
 
   public DetailedTag signature(Object signature) {
